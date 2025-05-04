@@ -1,0 +1,40 @@
+name: NVanish
+version: '1.3'
+main: ru.noloverme.nvanish.NVanish
+api-version: "1.16"
+author: noloverme
+description: Плагин для скрытия игроков на сервере
+softdepend: [PlaceholderAPI]
+commands:
+  vanish:
+    description: Управление видимостью игрока
+    usage: /vanish [on|off|reload] [игрок]
+    aliases: [v, hide]
+    permission: nvanish.use
+  nreport:
+    description: Отправить отчет о проблеме или предложение
+    usage: /nreport <bug|suggestion|other> <текст>
+    aliases: [nvreport]
+    permission: nvanish.report
+permissions:
+  nvanish.use:
+    description: Позволяет использовать команду /vanish для себя
+    default: op
+  nvanish.other:
+    description: Позволяет использовать команду /vanish для других игроков
+    default: op
+  nvanish.see:
+    description: Позволяет видеть скрытых игроков
+    default: op
+  nvanish.admin:
+    description: Позволяет перезагружать плагин
+    default: op
+  nvanish.join:
+    description: Автоматический ваниш при входе
+    default: op
+  nvanish.flight:
+    description: Постоянный полет даже после выхода из ваниша
+    default: op
+  nvanish.report:
+    description: Позволяет отправлять отчеты о проблемах
+    default: true

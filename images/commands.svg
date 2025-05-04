@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="command-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb" />
+      <stop offset="100%" stop-color="#2575fc" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#1f1f1f" />
+  
+  <!-- Command terminal symbol -->
+  <path d="M16,18 L48,18 C49.1,18 50,18.9 50,20 L50,44 C50,45.1 49.1,46 48,46 L16,46 C14.9,46 14,45.1 14,44 L14,20 C14,18.9 14.9,18 16,18 Z" fill="none" stroke="url(#command-gradient)" stroke-width="2" />
+  
+  <!-- Command line symbols -->
+  <path d="M22,27 L28,32 L22,37 M32,37 L42,37" fill="none" stroke="url(#command-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
