@@ -1,40 +1,36 @@
 name: NVanish
-version: '${project.version}'
-main: ru.noloverme.nvanish.NVanish
-api-version: "1.16"
-author: noloverme
-description: Плагин для скрытия игроков на сервере
+main: com.noloverme.nvanish.NVanish
+version: "${project.version}"
+api-version: 1.21
+authors: [noloverme]
+depend: [ProtocolLib, PlasmoVoice]
 softdepend: [PlaceholderAPI]
+description: Мощный плагин для режима невидимки.
+
 commands:
   vanish:
-    description: Управление видимостью игрока
-    usage: /vanish [on|off|reload] [игрок]
-    aliases: [v, hide]
+    description: Включает или выключает режим невидимки.
+    usage: /<command>
     permission: nvanish.use
-  nreport:
-    description: Отправить отчет о проблеме или предложение
-    usage: /nreport <bug|suggestion|other> <текст>
-    aliases: [nvreport]
-    permission: nvanish.report
+    aliases:
+      - v
+      - nvanish
 permissions:
   nvanish.use:
-    description: Позволяет использовать команду /vanish для себя
+    description: Позволяет игроку использовать команду /vanish.
     default: op
-  nvanish.other:
-    description: Позволяет использовать команду /vanish для других игроков
+  nvanish.use_others:
+    description: Позволяет игроку использовать /vanish на других игроках.
     default: op
-  nvanish.see:
-    description: Позволяет видеть скрытых игроков
+  nvanish.see_vanished:
+    description: Позволяет игроку видеть тех, кто находится в режиме невидимки.
     default: op
-  nvanish.admin:
-    description: Позволяет перезагружать плагин
+  nvanish.bypass.gamemode:
+    description: Позволяет игроку обходить ограничение на смену игрового режима.
     default: op
-  nvanish.join:
-    description: Автоматический ваниш при входе
+  nvanish.bypass.hit:
+    description: Позволяет игроку атаковать, находясь в режиме невидимки.
     default: op
-  nvanish.flight:
-    description: Постоянный полет даже после выхода из ваниша
+  nvanish.bypass.interact:
+    description: Позволяет игроку взаимодействовать, находясь в режиме невидимки.
     default: op
-  nvanish.report:
-    description: Позволяет отправлять отчеты о проблемах
-    default: true
