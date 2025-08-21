@@ -1,9 +1,0 @@
-com\noloverme\nvanish\settings\ConfigManager.class
-com\noloverme\nvanish\database\JsonManager.class
-com\noloverme\nvanish\database\JsonManager$1.class
-com\noloverme\nvanish\NVanish$1.class
-com\noloverme\nvanish\database\VanishPlayerState.class
-com\noloverme\nvanish\listeners\VanishListener.class
-com\noloverme\nvanish\expansion\NVanishPlaceholder.class
-com\noloverme\nvanish\NVanish.class
-com\noloverme\nvanish\commands\VanishCommand.class
